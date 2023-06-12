@@ -1,0 +1,407 @@
+
+@import "./partials/variables";
+
+header{
+
+    nav {
+        position: absolute !important;
+        z-index: 1000;
+        width: 99%;
+        padding: 3%;
+        .collapse {
+            padding-right: 1%;
+            img {
+                width: 100px;
+            }
+            ul{
+                li{
+                    // margin: 0 !important;
+                    a{
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+
+        .right-buttons {
+            button {
+                position: relative;
+                i{
+                    font-size: 25px;
+                }
+
+                .icon-count {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50px;
+                    background-color: black;
+                    color: white;
+                    font-size: 12px;
+                    position: absolute;
+                    top: -2px;
+                    right: -4px;
+                }
+            }
+        }
+    }
+}
+
+.slider {
+    // position: absolute;
+    top: 0;
+    // width: 100%;
+    height: 100%;
+
+    .karusel {
+        .item {
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item-1 {
+            background-image: url('https://caketheme.com/html/ruper/media/slider/19.jpg');
+            // height: 100vh;
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // background-size: cover;
+        }
+
+        .item-2 {
+            background-image: url('https://caketheme.com/html/ruper/media/slider/20.jpg');
+        }
+
+        .item-3 {
+            background-image: url('https://caketheme.com/html/ruper/media/slider/21.jpg');
+        }
+
+    }
+}
+
+// section {
+//     // margin-top: 50%;
+//     .container-xxl {
+//         div{
+//             height: 100vh;
+//         }
+//         .chair {
+//             width: 300px; 
+//             background-image: url('https://caketheme.com/html/ruper/media/product/cat-11.jpg');
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             background-size: 100%;
+//         }
+
+        
+
+//         .home-office {
+//             background-image: url('https://caketheme.com/html/ruper/media/product/cat-14.jpg');
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             background-size: 100%; 
+//         }
+//     }
+// }
+
+main{
+    section{
+        .container-xxl{
+            .list{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                width: 100%; 
+                ul{
+                    align-items: center; 
+                    
+                    li{
+                        list-style: none;
+                        margin: 5%;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+            }
+            .row{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap; 
+                .card{
+                    padding: 0 !important;
+                    overflow: hidden;
+                    margin: 1%;
+                    position: relative;
+                    border: none; 
+                    .hover-div{
+                        display: none;
+                        justify-content: center;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 6rem;
+                        .hover-icon{
+                            background-color: white;
+                            margin: 1%;
+                            padding: 2%;
+                            font-size: 20px;
+                        }
+                        .hover-icon:hover{
+                            background-color: black;
+                            transition: .25s;
+                        }
+                        .hover-icon:hover i{
+                            color: white;
+                            transition: .25s;
+                        }
+                    }
+                    a{
+                        .img{
+                            display: block;
+                        }
+                        .hover-img{
+                            display: none;
+                        }
+                    }
+                }
+                .card:hover .hover-div{
+                    display: flex;
+                    transition: 1s;
+                }
+                .card:hover a .img{
+                    display: none;
+                    transition: 1s;
+                }
+                .card:hover a .hover-img{
+                    display: block;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+    .carousel{
+        position: relative;
+        background-color: #e0e8f1;
+        width: 100%;
+        height: 50vh;
+        .owl-two{
+            position: absolute;
+            top: 70px;
+            position: relative;
+            .item{
+                .bg-img{
+                    width: 100%;
+                    // height: 50vh;
+                    height: 80vh;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100%;
+                }
+                .item-1{
+                    background-image: url('https://caketheme.com/html/ruper/media/banner/banner-18.jpg');
+                }
+                .item-2{
+                    background-image: url('https://caketheme.com/html/ruper/media/banner/banner-20.jpg');
+                }
+                .item-3{
+                    background-image: url('https://caketheme.com/html/ruper/media/banner/banner-19.jpg');
+                }
+                .slide-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2%;
+                    h1{
+                        text-align: center;
+                    }
+                    span{
+                        text-align: center;
+                    }
+                    button{
+                        border: solid 1px;
+                        border-radius: 5%; 
+                        padding: 1%;
+                        margin: 2%;
+                        a{
+                            text-decoration: none;
+                            color: $color-black;
+                        }
+                    }
+                    button:hover{
+                        background-color: black; 
+                    }
+                    button:hover a{
+                        color: white;
+                    }
+                }
+            }
+            .owl-nav{
+                
+                .owl-prev{
+                    span{
+                        font-size: 50px;
+                    }
+                }
+                .owl-next{ 
+                    span{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .empty{
+        height: 80vh;
+        border-bottom: solid 1px gray;
+    }
+    .join-email{
+        padding: 2%;
+        .join-text{
+            padding: 10% 2%;
+            h2{
+                font-family: monospace;
+            }
+            span{
+                color: gray;
+            }
+            form{
+                .inp{
+                    .inp-btn{
+                        margin: 2% !important; 
+                        input{
+                            width: 60% !important;
+                            margin-right: 2%;
+                        }
+                    }
+                }
+            }
+        }
+        .sofa-img{
+            height: 90vh;
+            background-image: url('https://caketheme.com/html/ruper/media/banner/newsletter-2.jpg'); 
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            .circle{
+                position: absolute;
+                top: 10px;
+                right: 100rem;
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .text{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    span{
+                        position: absolute;
+                        left: 50%;
+                        font-size: 15px;
+                        transform-origin: 0 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .carousel-three{
+        .owl-three{
+            .item{
+                width: 100%;
+                height: 50vh;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                position: relative;
+                .insta{
+                    position: absolute;
+                    top: 50%;
+                    right: 40%;
+                    display: none;
+                    i{
+                        font-size: 45px;
+                        color: $color-black;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .item-1{
+                background-image: url('https://caketheme.com/html/ruper/media/banner/instagram-6.jpg');
+            }
+            .item-2{
+                background-image: url('https://caketheme.com/html/ruper/media/banner/instagram-7.jpg');
+            }
+            .item-3{
+                background-image: url('https://caketheme.com/html/ruper/media/banner/instagram-8.jpg');
+            }
+            .item-4{
+                background-image: url('https://caketheme.com/html/ruper/media/banner/instagram-9.jpg');
+            }
+            .item-5{
+                background-image: url('https://caketheme.com/html/ruper/media/banner/instagram-10.jpg');
+            }
+            .item:hover{
+                .insta{
+                    display: block;
+                    opacity: 2 !important;
+                }
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+footer{
+    background-color: #1c2331;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+    .join-email{
+        padding: 1%;
+        .join-text{
+            padding: 8% 1%;
+        }
+        .sofa-img{
+            height: 80vh;
+            background-image: url('https://caketheme.com/html/ruper/media/banner/newsletter-2.jpg'); 
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .join-email{
+        display: inline !important;
+        text-align: center;
+        .join-text{
+            margin: 1%;
+            width: 100% !important;
+
+        }
+        .sofa-img{
+            width: 100% !important;
+            height: 50vh;  
+        }
+    }
+}
