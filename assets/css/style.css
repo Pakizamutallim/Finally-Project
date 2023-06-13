@@ -1,17 +1,38 @@
 header nav {
   position: absolute !important;
   z-index: 1000;
-  width: 99%;
+  width: 97%;
   padding: 3%;
+}
+header nav .menu-bar {
+  display: none;
+  margin: 5%;
+}
+header nav .menu-bar i {
+  font-size: 40px;
+}
+header nav .hidden-menu {
+  display: block;
+  position: absolute;
+  top: 100px;
+  width: 40%;
+  height: 50rem;
+  z-index: 2;
+  background-color: red;
 }
 header nav .collapse {
   padding-right: 1%;
+  margin-left: 2%;
 }
 header nav .collapse img {
   width: 100px;
 }
 header nav .collapse ul li a {
   color: black;
+  font-size: 15px !important;
+}
+header nav .right-buttons {
+  padding-right: 5%;
 }
 header nav .right-buttons button {
   position: relative;
@@ -62,6 +83,7 @@ main section .container-xxl .list {
   width: 100%;
 }
 main section .container-xxl .list ul {
+  margin-top: 2%;
   align-items: center;
 }
 main section .container-xxl .list ul li {
@@ -70,6 +92,19 @@ main section .container-xxl .list ul li {
 }
 main section .container-xxl .list ul li a {
   text-decoration: none;
+  color: black;
+}
+main section .container-xxl .list ul li:hover {
+  border-bottom: solid 1px;
+}
+main section .container-xxl .top-raiting {
+  display: flex !important;
+}
+main section .container-xxl .best-selling {
+  display: none !important;
+}
+main section .container-xxl .features {
+  display: none !important;
 }
 main section .container-xxl .row {
   display: flex;
@@ -281,6 +316,46 @@ main .carousel-three .owl-three .item:hover .insta {
   opacity: 2 !important;
 }
 
+footer {
+  margin-top: 10%;
+  background-color: #1c2331;
+}
+footer .socials {
+  background-color: #7c4dff;
+}
+footer hr {
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+footer .info div .row .contact {
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+footer .end {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+  header nav {
+    position: absolute !important;
+    z-index: 1000;
+  }
+  header nav .collapse {
+    padding-right: 1%;
+    margin-left: 2%;
+  }
+  header nav .collapse img {
+    width: 80px;
+  }
+  header nav .collapse ul li a {
+    font-size: 12px !important;
+  }
+  header nav .right-buttons {
+    padding-right: 2%;
+  }
+}
 @media (max-width: 1024px) {
   .join-email {
     padding: 1%;
@@ -295,6 +370,26 @@ main .carousel-three .owl-three .item:hover .insta {
     background-repeat: no-repeat;
     background-position: center;
   }
+  header nav .collapse ul li {
+    text-align: center;
+  }
+  header nav .collapse ul li i {
+    font-size: 20px;
+  }
+  header nav .collapse ul li a {
+    font-size: 12px !important;
+  }
+  header nav .right-buttons {
+    padding-right: 2%;
+  }
+}
+@media (max-width: 767px) {
+  header nav .menu-bar {
+    display: block;
+  }
+  header nav .right-buttons {
+    padding-right: 10%;
+  }
 }
 @media (max-width: 600px) {
   .join-email {
@@ -308,5 +403,16 @@ main .carousel-three .owl-three .item:hover .insta {
   .join-email .sofa-img {
     width: 100% !important;
     height: 50vh;
+  }
+}
+@media (max-width: 425px) {
+  header nav .menu-bar {
+    display: block;
+  }
+  header nav .right-buttons {
+    padding-right: 10%;
+  }
+  header nav .right-buttons button i {
+    font-size: 20px;
   }
 }

@@ -1,9 +1,10 @@
+
 $(document).ready(function(){
     $('.owl-one').owlCarousel({
         loop:true,
         margin:0,
         nav:false,
-        dots:false,
+        dots:true,
         responsive:{
             0:{
                 items:1
@@ -16,10 +17,8 @@ $(document).ready(function(){
             }
         }
     })
-    
-    
-    
-    
+
+
     $('.owl-two').owlCarousel({
         loop:true,
         margin:30,
@@ -63,14 +62,46 @@ $(document).ready(function(){
 })
 
 
+const menuBtn = document.querySelector(".menu-bar").addEventListener ("click", ()=>{
+    const hidden = document.querySelector(".hidden-menu").style.display = "none"
+})
 
 
-const text = document.querySelector(".text p"); 
-text.innerHTML = text.innertText.split('').map(
-    (char, i) =>
-    `<span style="transform: rotate(${i * 8.3}deg)">${char}</span>`
-    ).join("")
+$('menu-bar').click(function(){
+    $('hidden-menu').toggle(1000);
+})
 
+
+
+
+// const text = document.querySelector(".text p"); 
+// text.innerHTML = text.innertText.split('').map(
+    //     (char, i) =>
+    //     `<span style="transform: rotate(${i * 8.3}deg)">${char}</span>`
+    // ).join("")
+    
+    // alert()
+
+
+
+    
+// const topRaiting = document.querySelector(".top-raiting")
+// const bestSelling = document.querySelector(".best-selling")
+// const features = document.querySelector(".features")
+    
+    
+// topRaiting.addEventListener("click", ()=>{
+//     console.log(topRaiting.innerHTML);
+//     topRaiting.style.display = "flex !important"
+//     bestSelling.style.display = "none"
+//     features.style.display = "none"
+//     }) 
+    
+// bestSelling.addEventListener("click", ()=>{
+// topRaiting.style.display = "none"
+// bestSelling.style.display = "flex"
+// features.style.display = "none"
+// }) 
 
 
 
