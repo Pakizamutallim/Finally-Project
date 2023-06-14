@@ -63,13 +63,47 @@ $(document).ready(function(){
 
 
 const menuBtn = document.querySelector(".menu-bar").addEventListener ("click", ()=>{
-    const hidden = document.querySelector(".hidden-menu").style.display = "none"
+    const hidden = document.querySelector(".hidden-menu").style.display = "block"
 })
 
+const closeBtn = document.querySelector(".close-btn").addEventListener("click", ()=>{
+    const hidden = document.querySelector(".hidden-menu")
+    hidden.style.display = "none" 
+}) 
 
-$('menu-bar').click(function(){
-    $('hidden-menu').toggle(1000);
-})
+
+
+
+
+
+
+
+// $('menu-bar').click(function(){
+//     $('hidden-menu').toggle(1000); 
+    
+// })
+
+
+
+
+
+const topRaiting = document.querySelector(".top-raiting")
+const bestSelling = document.querySelector(".best-selling")
+topRaiting.addEventListener("click", ()=>{
+    const featured = document.querySelector(".features")
+    console.log(topRaiting.innerHTML);
+    // topRaiting.style.display = "flex !important"
+    // bestSelling.style.display = "none"
+    // featured.style.display = "none"
+}) 
+
+
+bestSelling.addEventListener("click", ()=>{
+topRaiting.style.display = "none"
+bestSelling.style.display = "flex"
+featured.style.display = "none"
+}) 
+
 
 
 
@@ -85,23 +119,6 @@ $('menu-bar').click(function(){
 
 
     
-// const topRaiting = document.querySelector(".top-raiting")
-// const bestSelling = document.querySelector(".best-selling")
-// const features = document.querySelector(".features")
-    
-    
-// topRaiting.addEventListener("click", ()=>{
-//     console.log(topRaiting.innerHTML);
-//     topRaiting.style.display = "flex !important"
-//     bestSelling.style.display = "none"
-//     features.style.display = "none"
-//     }) 
-    
-// bestSelling.addEventListener("click", ()=>{
-// topRaiting.style.display = "none"
-// bestSelling.style.display = "flex"
-// features.style.display = "none"
-// }) 
 
 
 

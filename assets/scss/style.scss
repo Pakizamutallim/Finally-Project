@@ -15,15 +15,47 @@ header{
             }
         }
         .hidden-menu{
-            display: block;
+            display: none;
             position: absolute;
-            top: 100px;
-            // width: 20rem;
-            width: 40%;
-            height: 50rem; 
+            top: 0;
+            width: 30%;
+            height: 30rem; 
             z-index: 2;
-            // height: 100%;
-            background-color: red;
+            transition: 1s;
+            background-color: gray;
+            .close-btn{
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+                background: transparent;
+                border: none;
+            }
+            .close-btn:hover{
+                i{
+                    color: white;
+                } 
+            }
+            ul{
+                margin-top: 40%;
+                li{
+                    a{ 
+                        // padding: 8px 8px 8px 32px;
+                        text-decoration: none;
+                        font-size: 25px;
+                        color: black;
+                        display: block;
+                        transition: 0.3s;
+                    }
+                }
+                li:hover{
+                    a{
+                        color: #f1f1f1;
+                    }
+                    background-color: rgb(53, 52, 52);
+                }
+            }
         }
         .collapse {
             padding-right: 1%;
@@ -33,10 +65,57 @@ header{
             }
             ul{
                 li{
-                    // margin: 0 !important;
                     a{
                         color: $color-black;
                         font-size: 15px !important;
+                        .down{
+                            display: inline;
+                        }
+                        .up{
+                            display: none;
+                        }
+                    }
+                    .sub-menu{
+                        display: none;
+                        position: absolute;
+                        width: 20%;
+                        height: 53vh;
+                        background-color: gray;
+                        z-index: 10000; 
+                        ul{
+                            margin-top: 5%;
+                            li{
+                                color: rgb(46, 27, 27);
+                                list-style: none;
+                                font-size: 20px; 
+                                a{
+                                    // font-size: 40px;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                li:hover{
+                    border-bottom: solid 1px;
+                    a{
+                        .down{
+                            display: none;
+                        }
+                        .up{
+                            display: inline;
+                        }
+                    }
+                    .sub-menu{
+                        display: block;
+                        ul{
+                            li{
+                                list-style: none;
+                                a{
+                                    text-decoration: none;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -132,13 +211,13 @@ main{
             }
 
             .top-raiting{
-                display: flex !important;
+                display: flex ;
             }
 
             .best-selling{
                 display: none !important;
             }
-            .features{
+            .featured{
                 display: none !important;
             }
             .row{
@@ -480,7 +559,6 @@ footer{
 @media (max-width: 767px){
     header{
         nav{
-            
             .menu-bar{
                 display: block;
             }

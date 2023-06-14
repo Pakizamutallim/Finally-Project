@@ -1,0 +1,26 @@
+main section {
+  background-color: #eee;
+}
+main section .container {
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: aqua;
+  width: 50%;
+  padding: 4%;
+}
+main section .container .form-group {
+  margin: 5%;
+  position: relative;
+}
+main section .container .form-group i {
+  font-size: 23px;
+  position: absolute;
+  top: 2rem;
+  right: 100px;
+}
+main section .container .form-group #show {
+  display: block;
+}
+main section .container .form-group #hide {
+  display: none;
+}
