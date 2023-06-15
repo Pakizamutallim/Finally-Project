@@ -1,26 +1,33 @@
-main section {
-  background-color: #eee;
-}
-main section .container {
-  border: solid 1px;
+main .container {
   border-radius: 10px;
-  background-color: aqua;
+  box-shadow: 0px 0px 17px 1px darkcyan;
+  background-color: white;
   width: 50%;
-  padding: 4%;
+  margin-top: 4%;
+  padding: 2%;
 }
-main section .container .form-group {
+main .container .form-group {
   margin: 5%;
   position: relative;
 }
-main section .container .form-group i {
+main .container .form-group h1 {
+  padding: 5%;
+  text-align: center;
+  border-bottom: solid 1px white;
+  box-shadow: 0px 20px 20px -19px darkcyan;
+}
+main .container .form-group i {
   font-size: 23px;
   position: absolute;
   top: 2rem;
-  right: 100px;
+  right: 10px;
 }
-main section .container .form-group #show {
+main .container .form-group #show {
   display: block;
 }
-main section .container .form-group #hide {
+main .container .form-group #hide {
   display: none;
+}
+main .container .form-btn {
+  text-align: center;
 }
