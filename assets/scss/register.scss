@@ -6,14 +6,24 @@ main {
         width: 50%;
         margin-top: 4%;
         padding: 2%;
+        .logo-register{
+            margin: 4%;
+            h2{
+                // padding: %;
+                text-align: center;
+                color: darkcyan;
+                font-size: 40px;
+            }
+        }
         .form-group {
             margin: 5%;
             position: relative;
             h1{
-                padding: 5%;
+                padding: 3%;
                 text-align: center;
                 border-bottom: solid 1px white;
                 box-shadow: 0px 20px 20px -19px darkcyan;
+                color: darkcyan;
             }
 
             i {
@@ -37,4 +47,35 @@ main {
         }
     }
 
+}
+
+
+footer{
+    margin-top: 10%;
+    background-color: #1c2331;
+    .socials{
+        background-color: $color-main;
+    }
+    hr{
+        width: 60px; 
+        background-color: $color-main; 
+        height: 2px;
+    }
+
+    .info{
+        div{
+            .row{
+                .contact{
+                    width: 60px; 
+                    background-color: $color-main; 
+                    height: 2px;
+                }
+
+            }
+        }
+    }
+
+    .end{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }

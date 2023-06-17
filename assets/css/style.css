@@ -36,12 +36,15 @@ header nav .hidden-menu .close-btn:hover i {
 header nav .hidden-menu ul {
   margin-top: 40%;
 }
+header nav .hidden-menu ul li {
+  list-style: none;
+  transition: 0.3s;
+}
 header nav .hidden-menu ul li a {
   text-decoration: none;
   font-size: 25px;
   color: black;
   display: block;
-  transition: 0.3s;
 }
 header nav .hidden-menu ul li:hover {
   background-color: rgb(53, 52, 52);
@@ -56,6 +59,11 @@ header nav .collapse {
 header nav .collapse img {
   width: 100px;
 }
+header nav .collapse ul .active a {
+  color: darkcyan;
+  font-size: 20px !important;
+  text-decoration: wavy;
+}
 header nav .collapse ul li a {
   color: black;
   font-size: 15px !important;
@@ -68,25 +76,6 @@ header nav .collapse ul li a .down {
 }
 header nav .collapse ul li a .up {
   display: none;
-}
-header nav .collapse ul li .sub-menu {
-  display: none;
-  position: absolute;
-  width: 20%;
-  height: 53vh;
-  background-color: gray;
-  z-index: 10000;
-}
-header nav .collapse ul li .sub-menu ul {
-  margin-top: 5%;
-}
-header nav .collapse ul li .sub-menu ul li {
-  color: rgb(46, 27, 27);
-  list-style: none;
-  font-size: 20px;
-}
-header nav .collapse ul li .sub-menu ul li a {
-  text-decoration: none;
 }
 header nav .collapse ul li:hover {
   border-bottom: solid 1px;
@@ -456,6 +445,9 @@ footer .end {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  header nav .hidden-menu {
+    display: none;
   }
   header nav .collapse ul li {
     text-align: center;

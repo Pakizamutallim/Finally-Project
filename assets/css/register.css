@@ -6,15 +6,24 @@ main .container {
   margin-top: 4%;
   padding: 2%;
 }
+main .container .logo-register {
+  margin: 4%;
+}
+main .container .logo-register h2 {
+  text-align: center;
+  color: darkcyan;
+  font-size: 40px;
+}
 main .container .form-group {
   margin: 5%;
   position: relative;
 }
 main .container .form-group h1 {
-  padding: 5%;
+  padding: 3%;
   text-align: center;
   border-bottom: solid 1px white;
   box-shadow: 0px 20px 20px -19px darkcyan;
+  color: darkcyan;
 }
 main .container .form-group i {
   font-size: 23px;
