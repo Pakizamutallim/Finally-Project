@@ -24,102 +24,129 @@
 
 <body>
     <main>
-        <div class="container">
-            <section class="vh-100">
-                <div class="container-fluid h-custom">
-                    <div class="row d-flex justify-content-center align-items-center h-100">
-                        <div class="col-md-9 col-lg-6 col-xl-5">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                                class="img-fluid" alt="Sample image">
-                        </div>
-                        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                            <form>
-                                <div
-                                    class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                                    <p class="lead fw-normal mb-0 me-3">Sign in with</p>
-                                    <button type="button" class="btn btn-primary btn-floating mx-1">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </button>
+        <div class="container" id="login">  
+            <div class="mb-3 form-group logo-register">  
+                <h2><b>RUPER</b></h2>  
+            </div>
+            <div class="mb-3 form-group "> 
+                <h1>Login</h1>
+            </div>
+            <div class="mb-3 form-group">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
 
-                                    <button type="button" class="btn btn-primary btn-floating mx-1">
-                                        <i class="fab fa-twitter"></i>
-                                    </button>
+            <div class="mb-3 form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" name="password" autocomplete="current-password" required="" id="password" placeholder="Enter password">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+            </div>
+            <div class="form-btn mb-3 form-group">
+                <button id="login" class="btn btn-success btn-lg">Submit</button>
+            </div>
 
-                                    <button type="button" class="btn btn-primary btn-floating mx-1">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </button>
-                                </div>
-
-                                <div class="divider d-flex align-items-center my-4">
-                                    <p class="text-center fw-bold mx-3 mb-0">Or</p>
-                                </div>
-
-                                <!-- Email input -->
-                                <div class="form-outline mb-4">
-                                    <input type="email" id="form3Example3" class="form-control form-control-lg"
-                                        placeholder="Enter a valid email address" />
-                                    <label class="form-label" for="form3Example3">Email address</label>
-                                </div>
-
-                                <!-- Password input -->
-                                <div class="form-outline mb-3">
-                                    <input type="password" id="form3Example4" class="form-control form-control-lg"
-                                        placeholder="Enter password" />
-                                    <label class="form-label" for="form3Example4">Password</label>
-                                </div>
-
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Checkbox -->
-                                    <div class="form-check mb-0">
-                                        <input class="form-check-input me-2" type="checkbox" value=""
-                                            id="form2Example3" />
-                                        <label class="form-check-label" for="form2Example3">
-                                            Remember me
-                                        </label>
-                                    </div>
-                                    <a href="#!" class="text-body">Forgot password?</a>
-                                </div>
-
-                                <div class="text-center text-lg-start mt-4 pt-2">
-                                    <button type="button" class="btn btn-primary btn-lg"
-                                        style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                                    <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
-                                            class="link-danger">Register</a></p>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
-                    <!-- Copyright -->
-                    <div class="text-white mb-3 mb-md-0">
-                        Copyright © 2020. All rights reserved.
-                    </div>
-                    <!-- Copyright -->
-
-                    <!-- Right -->
-                    <div>
-                        <a href="https://www.facebook.com" class="text-white me-4">
-                            <i class="fab fa-facebook-f"></i>
-                        </a> 
-                        <a href="https://twitter.com" class="text-white me-4">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.gmail.com" class="text-white me-4">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="https://www.linkedin.com" class="text-white">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                    <!-- Right -->
-                </div>
-            </section>
         </div>
-
     </main>
+
+
+
+
+
+    <footer class="text-center text-lg-start text-white">
+        <section class="socials d-flex justify-content-between p-4">
+
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Ruper</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, mollitia!
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto"/>
+            <p>
+              <a href="#!" class="text-white">Best Selling</a> 
+            </p>
+            <p>
+              <a href="#!" class="text-white">Top Raiting</a>
+            </p>
+            
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become an Affiliate</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"/>
+            <p><i class="fas fa-home mr-3"></i> Baku, Baku Azerbaijan</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@code.edu.az</p>
+            <p><i class="fas fa-phone mr-3"></i> +994 52 234 67 88</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <div class="end text-center p-3">
+      © 2023 
+    </div>
+    </footer>
+
+
+
+
+
+    <script src="./assets/js/login.js"></script>
 </body>
 
 </html>

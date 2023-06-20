@@ -1,0 +1,17 @@
+main .container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 15rem;
+}
+main .container .product-filter ul li {
+  font-size: 20px;
+  margin: 2%;
+}
+main .container .products {
+  background-color: red !important;
+}
+main .container .products .row {
+  justify-content: center !important;
+  height: 50vh;
+}

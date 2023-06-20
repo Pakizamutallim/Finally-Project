@@ -1,70 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin</title>
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/admin.css">
 </head>
-<body>
-    <header>
-        <div class="dashboard-pg">
-            <nav class="navigator-bar">
-                <div class="container">
-                    <div class="row">
-                        <div class=" navigator-bar-left col-6 d-flex align-items-center">
-                            <button class=" btn navbar-open-btn text-grey-blue me-3">
-                                <i class = "las la-bars"></i>
-                            </button>
-                            <div class="navbar-logo">
-                                <h1>RUPER</h1>
-                            </div>
-                        </div>
 
-                        <div class="navigator-bar-right col-6 d-flex align-items-center">
-                            <a href = "#" class = "profile-btn bg-blue text-white btn-circle me-3">
-                                <i class="lar la-user-circle"></i>
-                            </a>
-                            <button type = "button" class = "notification-btn text-grey-blue">
-                                <i class="lar la-bell"></i>
-                            </button>
-                        </div>
+<body>
+    <div class="side-bar col-2">
+        <div class="logo-name">
+            <h1>RUPER</h1>
+        </div>
+        <ul>
+            <li><a href=""><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+            <li><a href=""><i class="las la-money-bill-alt"></i> Payment</a></li>
+            <li><a href=""><i class="las la-question"></i> Help</a></li>
+            <li><a href=""><i class="fa-solid fa-gear"></i> Setting</a></li>
+        </ul>
+    </div>
+    <div class="container-xxl col-10">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" class="mx-2" placeholder="search here">
+                    <button type="submit"><i class="las la-search"></i></button>
+                </div>
+            </div>
+            <div class="user">
+                <a href="#" class="btn">Home</a>
+                <i class="lar la-user-circle"></i>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="row">
+                <div class="card col-3 m-4">
+                    <div class="box">
+                        <h1>000.00</h1>
+                        <h3>Balance</h3>
+                    </div>
+                    <div class="icon">
+                        <i class="las la-dollar-sign"></i>
                     </div>
                 </div>
-            </nav>
+
+                <div class="card col-3 m-4">
+                    <div class="box">
+                        <h1>000.00</h1>
+                        <h3>Deposite</h3>
+                    </div>
+                    <div class="icon">
+                        <i class="las la-wallet"></i>
+                    </div>
+                </div>
+
+                <div class="card col-3 m-4">
+                    <div class="box">
+                        <h1>000.00</h1>
+                        <h3>Credit</h3>
+                    </div>
+                    <div class="icon">
+                        <i class="lar la-credit-card"></i>
+                    </div>
+                </div>
+                
+
+            </div>
         </div>
-    </header>
+        <div class="processing">
+            <div class="add-btn card col-5 m-3">
+                <div class="adding">
+                    <a href="./list.html"><i class="las la-plus-circle"></i></a>
+                </div>
+            </div>
+            
+            <div class="product-list col-11 m-3">
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Img</th>
+                        <th scope="col">Hover</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th class="status-row" colspan="2" scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- <tr>
+                        <th scope="row" style="font-size: 9px; width: 20%;">1</th>
+                        <td>
+                            <img src="https://images.woodenstreet.de/image/cache/data%2Fsofa-beds%2Fdella-wooden-sofa-cum-bed-with-armrests%2Frevised%2Fhoney%2Fupdated%2F2-810x702.jpg" alt="">
+                        </td>
+                        <td>
+                            <img src="https://images.woodenstreet.de/image/cache/data%2Fsofa-beds%2Fdella-wooden-sofa-cum-bed-with-armrests%2Frevised%2Fhoney%2Fupdated%2F2-810x702.jpg" alt="">
+                        </td>
+                        <td>ad</td>
+                        <td><span>150</span>.00$</td>
+                        <td>information Lorem, ipsum.</td>
+                        <td><button class="edit btn btn-warning"><a href="">Edit</a></button></td>
+                        <td><button class="delete btn btn-danger"><a href="">Delete</a></button></td>
+                      </tr>  -->
+                      
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="empty"></div>
 
-    <main></main>
 
-    <footer></footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" 
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/js/admin.js"></script>
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- <script src="./assets/js/main.js" type="module"></script> -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+       
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDvvcPBxhcpvXgCcfNrimAWN0c7n5h2-zc",
+            authDomain: "elements-a60e8.firebaseapp.com",
+            databaseURL: "https://elements-a60e8-default-rtdb.firebaseio.com",
+            projectId: "elements-a60e8",
+            storageBucket: "elements-a60e8.appspot.com",
+            messagingSenderId: "782506063379",
+            appId: "1:782506063379:web:4e5eec3345a5e15461b1e6"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+
+        import { getDatabase, set, ref, update, remove, get, child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+        const db = getDatabase();
+        const tbody = document.querySelector("tbody")
+
+
+            const name = document.getElementById("nameInp");
+            const price = document.getElementById("price");
+            const info = document.getElementById("info");
+            const img = document.getElementById("img");
+            const hoverImg = document.getElementById("hoverImg");
+            
+    
+            const editBtn = document.querySelector(".edit");
+            const deleteBtn = document.getElementById("delete");
+
+
+
+        get(ref(db, "element/"))
+        .then(data => {
+            const all = data.val();
+            for (const key in all) {
+                const el = all[key];
+                $('tbody').append(`<tr>
+                        <th scope="row" style="font-size: 9px; width: 20%;">${el.Id}</th>
+                        <td>
+                            <img src="${el.Image}" alt="">
+                        </td>
+                        <td>
+                            <img src="${el.Hover}" alt="">
+                        </td>
+                        <td>${el.Name}</td>
+                        <td><span>${el.Price}</span>.00$</td>
+                        
+                        <td><button class="edit btn btn-warning">Edit</button></td>
+                        <td><button class="delete btn btn-danger">Delete</button></td>
+                      </tr>`)
+            }
+        });
+        function generate_uuidv4() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,
+                function (c) {
+                    var uuid = Math.random() * 16 | 0, v = c == 'x' ? uuid : (uuid & 0x3 | 0x8);
+                    return uuid.toString(16); 
+                });
+        }
+
+        editBtn.addEventListener("click", function(){
+            update(ref(db, "element/" + generate_uuidv4()),{
+                Image: img.value,
+                Name: name.value,
+                Hover: hover.value,
+                Price: prive.value
+            })
+        })
+
+
+        // const edits = document.getElementsByClassName("edit")
+
+        // document.addEventListener("click", function(e) {
+        //     const isedit = e.target.closest(".edit");
+        //     const isdelete = e.target.closest(".delete");
+
+        //     if(isedit){
+        //         console.log("salam")
+        //     }
+        //     if (isdelete) {
+        //         console.log("sagol");
+        //     }
+        //     console.log(window.location.href);
+        // })
+    </script>
+   
 </body>
-</html> 
+
+</html>

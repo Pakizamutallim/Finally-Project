@@ -1,0 +1,237 @@
+@import "./partials/variables";
+
+main{
+    // top: 20px;
+    padding-top: 7rem;
+    
+    .item-part{
+        display: flex;
+        padding: 3%;
+        text-align: center;
+        .left-sec{
+            border-right: solid 1px;
+            padding: 2%;
+            border-color: darkcyan;
+            .list{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                width: 100%; 
+                ul{
+                    margin-top: 2%;
+                    align-items: center; 
+                    
+                    li{
+                        cursor: pointer;
+                        list-style: none;
+                        margin: 5%;
+                        a{
+                            text-decoration: none;
+                            color: $color-black;
+                        }
+                    }
+                    li:hover{
+                        border-bottom: solid 1px ;
+                    }
+            
+                }
+                .filter{
+                    // border: solid 1px;
+                    // border-radius: 20px;
+                    text-align: center;
+                }
+                .row{
+                    text-align: center;
+                    margin-left: 0 !important;
+                }
+            }
+        }
+        .right-sec{
+           
+            .best-selling-right{
+                h3{
+                    text-align: center;
+                }
+                .card{
+                    margin: 2%; 
+                    .row{
+                        .img{
+                            img{
+                                width: 150px;
+                                height: 150px;
+                            }
+                        } 
+
+                        .text{
+                            .card-body{
+                                padding: 0 !important;
+                                h5{
+                                    font-size: 18px;
+                                }
+                                p{
+                                    font-size: 15px;
+                                    margin-bottom: 0 !important;
+                                }
+                                .btn{
+                                    font-size: 12px;
+                                    padding: 1% !important;
+                                }
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1000px){
+    .right-sec{
+           
+        .best-selling-right{
+            h3{
+                font-size: 23px;
+                text-align: center;
+            }
+            .card{
+                .row{
+                    .img{
+                        img{
+                            width: 120px !important;
+                            height: 100px !important;
+                        }
+                    }
+                    .text{
+                        .card-body{
+                            h5{
+                                font-size: 16px;
+                            }
+                            p{
+                                font-size: 15px;
+                            }
+                            .btn{
+                                font-size: 12px;
+                                padding: 1% !important;
+                            }
+
+                        }
+                    }
+                }
+                margin: 2%; 
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    li{
+        font-size: 12px;
+    }
+    .right-sec{
+           
+        margin-left: 1% !important;
+        .best-selling-right{
+            h3{
+                font-size: 23px;
+                text-align: center;
+            }
+            .card{
+                .row{
+                    .img{
+                        img{
+                            width: 120px !important;
+                            height: 100px !important;
+                        }
+                    }
+                    .text{
+                        .card-body{
+                            h5{
+                                font-size: 16px;
+                            }
+                            p{
+                                font-size: 15px;
+                            }
+                            .btn{
+                                font-size: 12px;
+                                padding: 1% !important;
+                            }
+
+                        }
+                    }
+                }
+                margin: 2%; 
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 425px){
+    .item-part{
+        display: inline !important;
+    }
+    .left-sec{
+        margin: 5%;
+        justify-content: center;
+        border-right: none !important;
+        width: 100% !important;
+        .list{
+            .filter{
+                li{
+                    font-size: 9px;
+                }
+        
+            }
+        }
+    }
+    .right-sec{
+        width: 100%;
+        margin: 5%;
+        border-top: solid 1px;
+        padding-top: 7%;
+        .best-selling-right{
+            h3{
+                font-size: 23px;
+                text-align: center;
+            }
+            .card{
+                .row{
+                    .img{
+                        img{
+                            width: 120px !important;
+                            height: 100px !important;
+                        }
+                    }
+                    .text{
+                        .card-body{
+                            h5{
+                                font-size: 16px;
+                            }
+                            p{
+                                font-size: 15px;
+                            }
+                            .btn{
+                                font-size: 12px;
+                                padding: 1% !important;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

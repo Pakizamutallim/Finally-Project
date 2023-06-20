@@ -1,17 +1,63 @@
-.divider:after,
-.divider:before {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: #eee;
+main .container {
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px 1px darkcyan;
+  background-color: white;
+  width: 50%;
+  margin-top: 4%;
+  padding: 2%;
+}
+main .container .logo-register {
+  margin: 4%;
+}
+main .container .logo-register h2 {
+  text-align: center;
+  color: darkcyan;
+  font-size: 40px;
+}
+main .container .form-group {
+  margin: 5%;
+  position: relative;
+}
+main .container .form-group h1 {
+  padding: 3%;
+  text-align: center;
+  border-bottom: solid 1px white;
+  box-shadow: 0px 20px 20px -19px darkcyan;
+  color: darkcyan;
+}
+main .container .form-group i {
+  font-size: 23px;
+  position: absolute;
+  top: 2rem;
+  right: 10px;
+}
+main .container .form-group #show {
+  display: block;
+}
+main .container .form-group #hide {
+  display: none;
+}
+main .container .form-btn {
+  text-align: center;
 }
 
-.h-custom {
-  height: calc(100% - 73px);
+footer {
+  margin-top: 10%;
+  background-color: #1c2331;
 }
-
-@media (max-width: 450px) {
-  .h-custom {
-    height: 100%;
-  }
+footer .socials {
+  background-color: #7c4dff;
+}
+footer hr {
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+footer .info div .row .contact {
+  width: 60px;
+  background-color: black;
+  height: 2px;
+}
+footer .end {
+  background-color: rgba(0, 0, 0, 0.2);
 }

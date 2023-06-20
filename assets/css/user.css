@@ -1,0 +1,158 @@
+main {
+  padding-top: 7rem;
+}
+main .item-part {
+  display: flex;
+  padding: 3%;
+  text-align: center;
+}
+main .item-part .left-sec {
+  border-right: solid 1px;
+  padding: 2%;
+  border-color: darkcyan;
+}
+main .item-part .left-sec .list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+main .item-part .left-sec .list ul {
+  margin-top: 2%;
+  align-items: center;
+}
+main .item-part .left-sec .list ul li {
+  cursor: pointer;
+  list-style: none;
+  margin: 5%;
+}
+main .item-part .left-sec .list ul li a {
+  text-decoration: none;
+  color: black;
+}
+main .item-part .left-sec .list ul li:hover {
+  border-bottom: solid 1px;
+}
+main .item-part .left-sec .list .filter {
+  text-align: center;
+}
+main .item-part .left-sec .list .row {
+  text-align: center;
+  margin-left: 0 !important;
+}
+main .item-part .right-sec .best-selling-right h3 {
+  text-align: center;
+}
+main .item-part .right-sec .best-selling-right .card {
+  margin: 2%;
+}
+main .item-part .right-sec .best-selling-right .card .row .img img {
+  width: 150px;
+  height: 150px;
+}
+main .item-part .right-sec .best-selling-right .card .row .text .card-body {
+  padding: 0 !important;
+}
+main .item-part .right-sec .best-selling-right .card .row .text .card-body h5 {
+  font-size: 18px;
+}
+main .item-part .right-sec .best-selling-right .card .row .text .card-body p {
+  font-size: 15px;
+  margin-bottom: 0 !important;
+}
+main .item-part .right-sec .best-selling-right .card .row .text .card-body .btn {
+  font-size: 12px;
+  padding: 1% !important;
+}
+
+@media (max-width: 1000px) {
+  .right-sec .best-selling-right h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .right-sec .best-selling-right .card {
+    margin: 2%;
+  }
+  .right-sec .best-selling-right .card .row .img img {
+    width: 120px !important;
+    height: 100px !important;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body h5 {
+    font-size: 16px;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body p {
+    font-size: 15px;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body .btn {
+    font-size: 12px;
+    padding: 1% !important;
+  }
+}
+@media (max-width: 768px) {
+  li {
+    font-size: 12px;
+  }
+  .right-sec {
+    margin-left: 1% !important;
+  }
+  .right-sec .best-selling-right h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .right-sec .best-selling-right .card {
+    margin: 2%;
+  }
+  .right-sec .best-selling-right .card .row .img img {
+    width: 120px !important;
+    height: 100px !important;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body h5 {
+    font-size: 16px;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body p {
+    font-size: 15px;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body .btn {
+    font-size: 12px;
+    padding: 1% !important;
+  }
+}
+@media (max-width: 425px) {
+  .item-part {
+    display: inline !important;
+  }
+  .left-sec {
+    margin: 5%;
+    justify-content: center;
+    border-right: none !important;
+    width: 100% !important;
+  }
+  .left-sec .list .filter li {
+    font-size: 9px;
+  }
+  .right-sec {
+    width: 100%;
+    margin: 5%;
+    border-top: solid 1px;
+    padding-top: 7%;
+  }
+  .right-sec .best-selling-right h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .right-sec .best-selling-right .card .row .img img {
+    width: 120px !important;
+    height: 100px !important;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body h5 {
+    font-size: 16px;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body p {
+    font-size: 15px;
+  }
+  .right-sec .best-selling-right .card .row .text .card-body .btn {
+    font-size: 12px;
+    padding: 1% !important;
+  }
+}

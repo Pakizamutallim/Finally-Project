@@ -40,3 +40,24 @@ main .container .form-group #hide {
 main .container .form-btn {
   text-align: center;
 }
+
+footer {
+  margin-top: 10%;
+  background-color: #1c2331;
+}
+footer .socials {
+  background-color: #7c4dff;
+}
+footer hr {
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+footer .info div .row .contact {
+  width: 60px;
+  background-color: black;
+  height: 2px;
+}
+footer .end {
+  background-color: rgba(0, 0, 0, 0.2);
+}

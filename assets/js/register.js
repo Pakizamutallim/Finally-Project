@@ -1,15 +1,3 @@
-// const show = document.getElementById("show")
-// show.addEventListener("click", ()=>{
-//     const hide = document.getElementById("hide")
-//     const inputEmail = document.getElementById("email")
-//     if (inputEmail.type == "password") {
-//         inputEmail.type = "text";
-//         show.style.display = "none"
-//         hide.style.display = "block" 
-//     }
-// })
-
-
 
 
 
@@ -21,3 +9,49 @@ togglePassword.addEventListener('click', function (e) {
     password.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
 });
+
+
+createUsersKey();
+function createUsersKey() {
+    if (localStorage.getItem('users') == null) {
+        localStorage.setItem('users', '[]')
+    }
+}
+
+
+const registerBtn = document.getElementById("register");
+        registerBtn.addEventListener('click', ()=>{
+            const name = document.getElementById('name');
+            const surname = document.getElementById('surname');
+            const mail = document.getElementById('email');
+            const password = document.getElementById('password');
+            let obj = {
+                name : name.value,
+                surname: surname.value,
+                email: mail.value,
+                password: password.value
+            }
+            createUsersKey();
+            let users = JSON.parse(localStorage.getItem('users'));
+            users.push(obj);
+            localStorage.setItem('users',JSON.stringify(users))
+        })
+
+
+
+
+
+
+
+
+// var users = JSON.parse(localStorage.getItem('Users')) || [];
+
+
+// var userData = [
+//     {Name:document.getElementById("name").value},
+//     {Surname:document.getElementById("surname").value},
+//     {Email:document.getElementById("email").value}, 
+// ];
+
+// users.push(userData);
+// localStorage.setItem('Users', JSON.stringify(users));

@@ -1,6 +1,10 @@
 
 @import "./partials/variables";
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     nav {
         position: absolute !important;
@@ -39,6 +43,7 @@ header{
             }
             ul{
                 margin-top: 40%;
+                
                 li{
                     list-style: none;
                     transition: 0.3s;
@@ -65,9 +70,9 @@ header{
                 width: 100px;
             }
             ul{
-                // .home{
-                //     margin-top: 2%;
-                // }
+                .home{
+                    margin-top: 2%;
+                }
                 .active{
                     a{
                         color: darkcyan;
@@ -198,6 +203,7 @@ main{
                     align-items: center; 
                     
                     li{
+                        cursor: pointer;
                         list-style: none;
                         margin: 5%;
                         a{
@@ -209,6 +215,11 @@ main{
                         border-bottom: solid 1px ;
                     }
 
+                }
+                .filter{
+                    border: solid 1px;
+                    border-radius: 20px;
+                    text-align: center;
                 }
             }
 
@@ -224,7 +235,7 @@ main{
             }
             .row{
                 display: flex;
-                justify-content: center;
+                // justify-content: center;
                 flex-wrap: wrap; 
                 .card{
                     padding: 0 !important;
@@ -237,7 +248,8 @@ main{
                         justify-content: center;
                         width: 100%;
                         position: absolute;
-                        bottom: 6rem;
+                        bottom: 10rem;
+                        transition: 1s; 
                         .hover-icon{
                             background-color: white;
                             margin: 1%;
@@ -482,10 +494,23 @@ footer{
         }
     }
 
+    
     .end{
         background-color: rgba(0, 0, 0, 0.2);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

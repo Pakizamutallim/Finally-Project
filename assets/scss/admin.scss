@@ -1,18 +1,231 @@
-.dashboard-pg{
-    .navigator-bar{
-        .container{
-            .row{
-                .navigator-bar-left{
-                    button{
-                        background-color: transparent;
-                        border: none;
-                        outline: none;
-                    }
+ul {
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+html{
+    overflow-y: scroll;
+}
+body {
+
+    min-height: 100vh;
+
+    .side-bar {
+        top: 0;
+        .logo-name {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                color: whitesmoke;
+            }
+        }
+
+        position: fixed;
+        z-index: 100;
+        background-color: black;
+        // width: 20vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        ul {
+            left: 0;
+            margin-left: 0;
+            li {
+                font-size: 24px;
+                padding: 10px 3px;
+                display: flex;
+                align-items: center;
+                a {
+                    color: white;
                 }
-                .navigator-bar-right{
-                    
+            }
+
+            li:hover {
+                background-color: white;
+
+                a {
+                    color: rgb(138, 116, 78);
                 }
             }
         }
     }
+
+    .container-xxl {
+        // position: fixed;
+        right: 0;
+        // left: 30px;
+        margin-left: 4%;
+        width: 90%;
+        height: 100vh;
+        .header {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            right: 10px;
+            width: 80vw;
+            height: 10vh;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px 0 rgb(34, 33, 33);
+
+            .nav {
+                width: 90%;
+                display: flex;
+                align-items: center;
+
+                .search {
+                    flex: 3;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        border: none;
+                        box-shadow: 1px 2px 4px rgb(138, 116, 78);
+                        background-color: white;
+                        padding: 1%;
+                        width: 50%;
+                        border-radius: 20px;
+                    }
+
+                    input:focus {
+                        border-color: white;
+                        border: none;
+                    }
+
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .user {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                margin-right: 2%;
+
+                a {
+                    background: transparent;
+                    margin-right: 5%;
+                }
+
+                a:hover {
+                    background-color: rgb(138, 116, 78);
+                    color: white;
+                }
+
+                i {
+                    font-size: 30px;
+                    margin-right: 5%;
+                    color: rgb(138, 116, 78);
+                }
+            }
+        }
+
+        .content {
+            position: relative;
+            margin-top: 15vh;
+            min-height: 50vh;
+
+            .row {
+                flex-wrap: nowrap;
+                position: absolute;
+                left: 10rem;
+                width: 80%;
+                padding: 10px 15px;
+                .card {
+                    // padding: 1%;
+                    flex-direction: row;
+                    display: flex !important;
+                    justify-content: center !important;
+                    // .box {
+                    //     h1 {}
+                    // }
+
+                    .icon {
+                        i {
+                            font-size: 90px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .processing{
+            position: absolute;
+            left: 15rem;
+            width: 80%;
+            margin-bottom: 5%;
+            .card{
+                background-color: #212529;
+                .adding{
+                    text-align: center;
+                    i{
+                        font-size: 70px;
+                        color: white;
+
+                    }
+                }
+            }
+            .card:hover{
+                background-color: grey;
+                i{
+                    color: darkgreen;
+                }
+            }
+            .product-list{
+                table{
+                    border: solid 1px !important;
+                    thead{
+                        tr{
+                            .status-row{
+                                width: 20%;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                button{
+                                    a{
+                                        text-decoration: none;
+                                        color: white;
+                                    }
+                                }
+                                img{
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .emypy{
+            height: 100vh;
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px){
+    
 }
