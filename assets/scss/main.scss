@@ -1,6 +1,9 @@
 @import "./partials/variables";
 
 header{
+    // position: fixed;
+    // top: 0;
+
     nav {
         position: absolute !important;
         z-index: 1000;
@@ -237,6 +240,8 @@ header{
 
 
 footer{
+    position: absolute;
+    width: 100%;  // shop sayti ucun absolute etmisem
     margin-top: 10%;
     background-color: #1c2331;
     .socials{

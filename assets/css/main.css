@@ -201,6 +201,8 @@ header nav .right-buttons button .icon-count {
 }
 
 footer {
+  position: absolute;
+  width: 100%;
   margin-top: 10%;
   background-color: #1c2331;
 }

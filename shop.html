@@ -56,21 +56,9 @@
             </div>
             <div class="right-buttons d-flex justify-content-end col-6">
                 <button class="btn"><a href="./login.html" class="nav-link">Login</a></button>
-                <!-- <button class="btn"><a href="./wishlist.html" class="text-black-50"><i class="lar la-heart"></i></a>
-                    <div class="icon-count"><span>1</span></div>
-                </button>
-                <button class="btn"><a href="" class="text-black-50"><i class="las la-shopping-cart"></i></a>
-                    <div class="icon-count"><span>2</span></div>
-                </button> -->
+               
             </div>
         </nav>
-        <div class="slider mx-0">
-            <div class="karusel owl-one owl-carousel owl-theme">
-                <div class="item item-1"></div>
-                <div class="item item-2"></div>
-                <div class="item item-3"></div>
-            </div>
-        </div>
     </header>
 
 
@@ -81,16 +69,16 @@
                     <li class="nav item">All</li>
                     <li class="nav item">Table</li>
                     <li class="nav item">Sofa</li>
-                    <li class="nav item">Accessory</li>
                     <li class="nav item">Chair</li>
-                </ul>
+                    <li class="nav item">Accessory</li>
+                </ul> 
             </div>
-            <div class="products col-10">
-                <div class="row">
+            <div class="products col-9">
+                <div class="elements row">
 
-                    <div type="${el.Type}" class="card text-center col-2" style="width: 16rem;">
+                    <!-- <div type="${el.Type}" class="card text-center col-2" style="width: 12rem;">
                         <a href=""> 
-                            <img src="https://caketheme.com/html/ruper/media/product/8-2.jpg" class="img card-img-top"
+                            <img src="${el.Image}" class="img card-img-top"
                                 alt="...">
                             <img src="${el.Hover}"
                                 class="hover-img card-img-top" alt="...">
@@ -101,69 +89,141 @@
                             <p class="type card-text">${el.Type}</p>
                         </div>
                         <div class="hover-div">
-                            <div class="basket-btn hover-icon"><i class="las la-suitcase"></i></div>
-                            <div class="hover-icon"><i class="lar la-heart"></i></div>
-                            <div class="hover-icon"><i class="las la-expand-arrows-alt"></i></div>
+                            <button id="addBasket" class="btn btn-warning" >Add to Basket</button>
                         </div>
-                    </div>
-                    <div type="${el.Type}" class="card text-center col-2" style="width: 16rem;">
-                        <a href=""> 
-                            <img src="https://caketheme.com/html/ruper/media/product/8-2.jpg" class="img card-img-top"
-                                alt="...">
-                            <img src="${el.Hover}"
-                                class="hover-img card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">${el.Name}</h5>
-                            <p class="card-text">${el.Price}.00$</p>
-                            <p class="type card-text">${el.Type}</p>
-                        </div>
-                        <div class="hover-div">
-                            <div class="basket-btn hover-icon"><i class="las la-suitcase"></i></div>
-                            <div class="hover-icon"><i class="lar la-heart"></i></div>
-                            <div class="hover-icon"><i class="las la-expand-arrows-alt"></i></div>
-                        </div>
-                    </div>
+                    </div> -->
 
-                    <div type="${el.Type}" class="card text-center col-2" style="width: 16rem;">
-                        <a href=""> 
-                            <img src="https://caketheme.com/html/ruper/media/product/8-2.jpg" class="img card-img-top"
-                                alt="...">
-                            <img src="${el.Hover}"
-                                class="hover-img card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">${el.Name}</h5>
-                            <p class="card-text">${el.Price}.00$</p>
-                            <p class="type card-text">${el.Type}</p>
-                        </div>
-                        <div class="hover-div">
-                            <div class="basket-btn hover-icon"><i class="las la-suitcase"></i></div>
-                            <div class="hover-icon"><i class="lar la-heart"></i></div>
-                            <div class="hover-icon"><i class="las la-expand-arrows-alt"></i></div>
-                        </div>
-                    </div>
-
-                    <div type="${el.Type}" class="card text-center col-2" style="width: 16rem;">
-                        <a href=""> 
-                            <img src="https://caketheme.com/html/ruper/media/product/8-2.jpg" class="img card-img-top"
-                                alt="...">
-                            <img src="${el.Hover}"
-                                class="hover-img card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">${el.Name}</h5>
-                            <p class="card-text">${el.Price}.00$</p>
-                            <p class="type card-text">${el.Type}</p>
-                        </div>
-                        <div class="hover-div">
-                            <div class="basket-btn hover-icon"><i class="las la-suitcase"></i></div>
-                            <div class="hover-icon"><i class="lar la-heart"></i></div>
-                            <div class="hover-icon"><i class="las la-expand-arrows-alt"></i></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </main>
 
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" 
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/main.js" type="module"></script>
+
+
+
+
+
+
+    <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+           
+    
+            const firebaseConfig = {
+                apiKey: "AIzaSyDvvcPBxhcpvXgCcfNrimAWN0c7n5h2-zc",
+                authDomain: "elements-a60e8.firebaseapp.com",
+                databaseURL: "https://elements-a60e8-default-rtdb.firebaseio.com",
+                projectId: "elements-a60e8",
+                storageBucket: "elements-a60e8.appspot.com",
+                messagingSenderId: "782506063379",
+                appId: "1:782506063379:web:4e5eec3345a5e15461b1e6"
+            };
+    
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+    
+    
+            import { getDatabase, set, ref, update, remove, get, child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+            const db = getDatabase();
+            const elements = document.querySelector(".elements")
+    
+
+
+            get(ref(db, "element/"))
+            .then(data => {
+                const all = data.val();
+                for (const key in all) {
+                    const el = all[key];
+                    // console.log(el.Name)
+                    $('.elements').append(`
+                    <div type="${el.Type}" class="card text-center col-2" style="width: 12rem;">
+                        <a href=""> 
+                            <img src="${el.Image}" class="img card-img-top"
+                                alt="...">
+                            <img src="${el.Hover}"
+                                class="hover-img card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">${el.Name}</h5>
+                            <p class="card-text">${el.Price}.00$</p>
+                            <p class="type card-text">${el.Type}</p>
+                        </div>
+                        <div class="hover-div">
+                            <button id="${el.Id}" class="addBasket btn btn-warning" >Add to Cart</button>
+                        </div>
+                    </div>`)
+                        }
+                        
+                    });
+
+
+
+
+
+
+
+        $('.elements').on("click", ".addBasket", function () {
+            let result = getCookie('basket');
+            let basketItems = [];
+            const currentId = $(this).attr('Id')
+            if (result != "") {
+                basketItems = JSON.parse(result)
+                // console.log("salam");
+            }
+            const existIndex = basketItems.findIndex(p=>p.id == currentId);
+            console.log(basketItems.findIndex(p=>p.id == currentId));
+            if (existIndex != -1) {
+                basketItems[existIndex].count++;
+            }
+            else{
+                basketItems.push({Id:currentId, count:1})
+            }
+            alert("sebete elave olundu")
+            
+            document.cookie = "basket="+JSON.stringify(basketItems);
+        })
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+                    
+        </script>
+
+</body>
+
+</html>
