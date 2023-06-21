@@ -55,7 +55,7 @@
 
             </div>
             <div class="right-buttons d-flex justify-content-end col-6">
-                <button class="btn"><a href="" class="nav-link">Log Out</a></button>
+                <button class="btn"><a href="" class="logout nav-link">Log Out</a></button>
                 <button class="btn"><a href="./wishlist.html" class="text-black-50"><i class="lar la-heart"></i></a>
                     <div class="icon-count"><span>1</span></div>
                 </button>
@@ -313,6 +313,13 @@
            
  
         });
+
+
+        const logOut = document.querySelector("logout")
+        logOut.addEventListener("click", function(){
+            console.log(users[0]);
+            localStorage.removeItem(users[0])
+        })
 
     </script>
 

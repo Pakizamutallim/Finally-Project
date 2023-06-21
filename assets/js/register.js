@@ -35,6 +35,7 @@ const registerBtn = document.getElementById("register");
             let users = JSON.parse(localStorage.getItem('users'));
             users.push(obj);
             localStorage.setItem('users',JSON.stringify(users))
+            window.location.href = "user.html"
         })
 
 
